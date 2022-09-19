@@ -1,0 +1,349 @@
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    gap: 10px;
+    display: grid;
+    /* grid-template-areas: 
+    "one two three four five six"
+    "one two three-one four five six"
+    "one two-one three-two four five six" */
+
+    /* grid-template-rows: repeat(11, 1fr); */
+    grid-template-rows: repeat(11, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.one {
+background-color: tomato;
+/* grid-area: one; */
+/* grid-template-columns: 1 / 2;
+grid-template-rows: 1 / -1; */
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 1;
+grid-row-end: 13;
+text-align: center;
+justify-content: top;
+}
+
+.two {
+    background-color:springgreen;
+    /* grid-area: two; */
+    /* grid-template-columns: 2/3;
+    grid-template-rows: 1 / 7; */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    
+}
+
+.three {
+    background-color: violet;
+    /* grid-area: three;
+    grid-template-columns: 3/4;
+    grid-template-rows: 1/4; */
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.four {
+    background-color: thistle;
+    /* grid-area: four; */
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.four-one{
+    background-color: beige;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+
+.four-two{
+    background-color: aliceblue;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 10;
+}
+
+.four-three{
+    background-color: lavender;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 10;
+    grid-row-end: 13;
+}
+
+.five {
+    background-color: turquoise;
+    /* grid-area: five; */
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.five-one{
+    background-color: aqua;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.five-two{
+    background-color: aquamarine;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
+.five-three{
+    background-color: cyan;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 7;
+    grid-row-end: 9;
+
+}
+
+.five-four{
+    background-color: darkturquoise;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+
+.five-five{
+    background-color: skyblue;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 9;
+    grid-row-end: 11;
+}
+
+.five-six{
+    background-color: paleturquoise;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 11;
+    grid-row-end: 13;
+}
+
+.six {
+    background-color: silver;
+    /* grid-area: six; */
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.six-one{
+    background-color: grey;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.six-two{
+    background-color: grey;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.six-three{
+    background-color: grey;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.six-four{
+    background-color: grey;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+.six-five{
+    background-color: grey;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+.six-six{
+    background-color: grey;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+.six-seven{
+    background-color: grey;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 8;
+    grid-row-end: 9;
+}
+.six-eight {
+    background-color: grey;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 9;
+    grid-row-end: 10;
+}
+.six-nine {
+    background-color: grey;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 10;
+    grid-row-end: 11;
+}
+.six-ten {
+    background-color: grey;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 11;
+    grid-row-end: 12;
+}
+.six-eleven{
+    background-color: grey;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 12;
+    grid-row-end: 13;
+}
+
+
+.two-one {
+    background-color: seagreen;
+    /* grid-area: two-one; */
+    /* grid-template-columns: 2/3;
+    grid-template-rows: 7/13; */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 13;
+}
+
+.three-one {
+    background-color:blueviolet;
+    /* grid-area: three-one; */
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 9;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.three-two {
+    background-color: darkmagenta;
+    /* grid-area: three-two; */
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 9;
+    grid-row-end: 13;
+    padding-left: 3.5rem;
+}
+
+
+.demo1 {
+    text-align: left;
+    padding-bottom: 1rem;
+    
+}
+
+.header-one {
+    padding-bottom: .5rem;
+}
+
+li {
+    padding-bottom: 2rem;
+    background-color: tomato;
+    list-style: none;
+    padding-right: 2rem;
+}
+
+.social-media {
+    align-items: baseline;
+}
+
+.image1 {
+    text-align: center;
+    background-color: black;
+    color: violet;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    width: 5rem;
+}
+
+.images2 {
+    text-align: center;
+    background-color: black;
+    color: blueviolet;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+
+a {
+    text-align: end;
+}
+
+
+.social {
+    background-color: black;
+}
+
+.images-surfboard{
+    text-align: center;
+    margin-right: 2.5rem;
+}
+
+.images3{
+    border-radius: 1rem;
+    background-color: black;
+    text-align: center;
+    margin-left: 5.5rem;
+    color: darkmagenta;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sixth {
+    margin-left: 3.5rem;
+}
+
+.sixth-a {
+    margin-top: 3rem;
+}
+
+.sixth-b {
+    margin-left: 4.5rem;
+}
+
+.sixth-c {
+    margin-left: 2.5rem;
+}
+
+.sixth-d {
+    margin-left: 2.7rem;
+}
